@@ -8,13 +8,13 @@ const marketSchema = Schema(
             ref : "User"
         },
         data:{
-            type : String,
+            category : String,
             date : String,
             time : String,
             image : String,
             description: String,
-            price : Number
-        }
+            price : Number,
+        },
     }
 )
 

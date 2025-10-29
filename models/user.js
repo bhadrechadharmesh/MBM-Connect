@@ -4,8 +4,14 @@ const Schema = mongoose.Schema;
 
 const userSchema = Schema(
     {
-        username : String,
-        email : String,
+        username :{
+            type :String ,
+            required : true 
+        },
+        email : {
+            type : String,
+            required:true,
+        },
         chats:[
             {
                 date:String,
