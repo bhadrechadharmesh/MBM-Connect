@@ -9,9 +9,17 @@ const postSchema = Schema(
         },
 
         data:{
-            url:String,
-            description : String,
-            likes:Number,
+            url:{
+                type:String,
+                required:true
+            },
+            description :{
+                type:String,
+            },
+            likes:{
+                type:Number,
+                default:0,
+            },
             comment : {
                 owner:{
                     type:Schema.Types.ObjectId,

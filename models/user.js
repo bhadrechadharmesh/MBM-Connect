@@ -12,22 +12,6 @@ const userSchema = Schema(
             type : String,
             required:true,
         },
-        chats:[
-            {
-                date:String,
-                time:String,
-                partner:{
-                    type: Schema.Types.ObjectId,
-                    ref : "User",
-                },
-                msg:[
-                    {
-                        sender:String,
-                        reciever:String,
-                    }
-                ]
-            }
-        ],
     }
 )
 
